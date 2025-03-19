@@ -6,37 +6,27 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 21:31:56 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/19 22:36:36 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/19 23:00:20 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
+
 
 int main() {
-    ScavTrap scav("Scavvy");
-
-    // attacks
-    scav.attack("Enemy1");
-    scav.attack("Enemy2");
-
-    // taking damage
-    scav.takeDamage(5);
-    scav.takeDamage(8);
-
-    // attack after death
-    scav.attack("Enemy3");
-
-    // repairing
-    scav.beRepaired(5);
-
-    // another ScavTrap with copy constructor
-    ScavTrap scavCopy(scav);
-
-    // gate keeper mode
-    scav.guardGate();
     
-    // copy gate keeper mode
-    scavCopy.guardGate(); 
+    FragTrap flag("Flaggy");
+
+    flag.attack("Enemy1");
+
+    flag.takeDamage(30);
+
+    flag.beRepaired(20);
+
+    flag.highFivesGuys();
+
+    flag.takeDamage(100); 
+    flag.beRepaired(50);  
     
 
     return 0;
