@@ -1,10 +1,12 @@
 
 
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC_DIR = srcs
+INC_DIR = Includes
+SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 CC = g++
 RM = rm -f
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
-INCLUDES = -IIncludes
+INCLUDES = -I$(INC_DIR)
 
 NAME = claptrap
 
@@ -14,7 +16,7 @@ $(NAME): $(SRCS)
 	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRCS) -o $(NAME)
 
 clean:
-$(RM) $(NAME)
+	$(RM) $(NAME)
 
 fclean: clean
 
