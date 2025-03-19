@@ -6,13 +6,12 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 22:37:14 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/19 22:45:22 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/19 22:48:41 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "FragTrap.hpp"
-#include <iostream>
+#include "FlagTrap.hpp"
 
 // Constructor
 FragTrap::FragTrap(const std::string& name) : ClapTrap(name) {
