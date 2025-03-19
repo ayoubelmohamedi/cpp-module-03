@@ -6,7 +6,7 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 22:36:20 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/19 22:49:24 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/19 22:50:38 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ public:
 
     // Attack method
     void attack(const std::string& target);
+    void highFivesGuys(void);
 };
 
 #endif
