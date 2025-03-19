@@ -2,7 +2,12 @@
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name){
-    std::cout << "ScavTrap " << name << " has been constructed!" << std::endl;
+    hitPoints = 100;
+    energyPoints = 50;
+    attackDamage = 20;
+    std::cout << "ScavTrap " << name << " has been constructed with "
+              << hitPoints << " HP, " << energyPoints << " EP, and "
+              << attackDamage << " AD." << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
@@ -24,7 +29,6 @@ void ScavTrap::attack(const std::string& target) {
         std::cout << "ScavTrap " << name << " has no energy left to attack!" << std::endl;
         return;
     }
-
     energyPoints--;
     std::cout << "ScavTrap " << name << " attacks " << target
               << ", causing " << attackDamage << " points of damage!" << std::endl;
