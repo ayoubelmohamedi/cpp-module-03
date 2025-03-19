@@ -6,7 +6,7 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 21:31:56 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/19 21:32:01 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/19 22:02:38 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,13 @@ int main() {
 
     // another ScavTrap with copy constructor
     ScavTrap scavCopy(scav);
+
+    // gate keeper mode
+    scav.guardGate();
+    
+    // copy gate keeper mode
+    scavCopy.guardGate(); 
+    
 
     return 0;
 }
