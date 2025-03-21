@@ -6,7 +6,7 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 22:36:20 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/20 23:55:29 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/21 00:44:07by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 #include "ClapTrap.hpp"
 #include <iostream>
 
-class FragTrap : public ClapTrap {
+class FragTrap : virtual public ClapTrap {
 public:
     // Constructors and destructor
     FragTrap(const std::string& name);

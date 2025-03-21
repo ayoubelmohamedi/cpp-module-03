@@ -6,7 +6,7 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 21:50:53 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/20 23:55:27 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/21 00:49:12 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "ClapTrap.hpp"
 #include <iostream>
 
-class ScavTrap : public ClapTrap {
+class ScavTrap : virtual public ClapTrap {
 public:
     // Constructors and Destructor
     ScavTrap(const std::string& name);
