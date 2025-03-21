@@ -6,7 +6,7 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 23:43:34 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/21 00:15:47 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/21 00:34:11 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,10 @@ public:
     DiamondTrap(const std::string& name);
 
     ~DiamondTrap();
+
+    DiamondTrap &operator=(const DiamondTrap &src);
+    DiamondTrap(const DiamondTrap& other);
+
 
     void attack(const std::string& target);
     void whoAmI();
