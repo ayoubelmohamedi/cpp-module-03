@@ -6,7 +6,7 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 22:36:20 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/20 23:55:31 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/21 00:30:25 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ protected:
 
 public:
     ClapTrap(const std::string& name);
-    ~ClapTrap();
+    virtual ~ClapTrap();
 
     // copy constructor
     ClapTrap(const ClapTrap & other);
