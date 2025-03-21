@@ -6,7 +6,7 @@
 /*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 23:43:34 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/20 23:43:49 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/03/21 00:15:47 by ael-moha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@
 class DiamondTrap : public FragTrap, public ScavTrap {
 private:
     std::string name;
+    int hitPoints; 
+    int energyPoints;
+    int attackDamage;
 
 public:
     DiamondTrap(const std::string& name);
