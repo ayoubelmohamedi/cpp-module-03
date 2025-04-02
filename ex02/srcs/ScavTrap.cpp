@@ -6,7 +6,7 @@
 /*   By: macbookpro <macbookpro@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 22:36:37 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/04/02 08:21:47 by macbookpro       ###   ########.fr       */
+/*   Updated: 2025/04/02 08:25:32 by macbookpro       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ void ScavTrap::attack(const std::string& target) {
     std::cout << "ScavTrap " << name << " attacks " << target
               << ", causing " << attackDamage << " points of damage!" << std::endl;
 }
-
 
 void ScavTrap::guardGate() {
     std::cout << "ScavTrap " << name << " has entered in Gate keeper mode." << std::endl;

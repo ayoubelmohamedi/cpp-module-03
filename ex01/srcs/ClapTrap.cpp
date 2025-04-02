@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macbookpro <macbookpro@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 21:31:54 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/19 21:31:55 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/04/02 08:25:15 by macbookpro       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 
 #include "ClapTrap.hpp"

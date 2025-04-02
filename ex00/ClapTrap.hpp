@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ael-moha <ael-moha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: macbookpro <macbookpro@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 21:16:48 by ael-moha          #+#    #+#             */
-/*   Updated: 2025/03/19 21:16:49 by ael-moha         ###   ########.fr       */
+/*   Updated: 2025/04/02 08:24:51 by macbookpro       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 
 #ifndef CLAPTRAP_HPP
