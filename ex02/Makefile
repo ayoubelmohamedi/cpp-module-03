@@ -14,22 +14,24 @@
 SRC_DIR = srcs
 INC_DIR = Includes
 SRCS = $(wildcard $(SRC_DIR)/*.cpp)
-CC = g++
+OBJS = ${SRCS:.cpp=.o}
+CXX = c++
 RM = rm -f
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 INCLUDES = -I$(INC_DIR)
 
 NAME = FlagTrap
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-	$(CC) $(CPPFLAGS) $(INCLUDES) $(SRCS) -o $(NAME)
+$(NAME): $(OBJS)
+	$(CC) $(CPPFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
 
 clean:
-	$(RM) $(NAME)
+	$(RM) $(OBJS)
 
 fclean: clean
+	$(RM) $(NAME)
 
 re: fclean $(NAME)
 
