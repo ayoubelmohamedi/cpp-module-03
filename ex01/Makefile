@@ -17,8 +17,9 @@ SRCS = $(wildcard $(SRC_DIR)/*.cpp)
 OBJS = ${SRCS:.cpp=.o}
 CXX = c++
 RM = rm -f
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 INCLUDES = -I$(INC_DIR)
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 $(INCLUDES)
+
 
 NAME = ScavTrap
 
@@ -33,6 +34,6 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
 
 .PHONY: all clean fclean re
