@@ -12,17 +12,18 @@
 
 
 SRCS = main.cpp ClapTrap.cpp
-CC = g++
+OBJS = ${SRCS:.cpp=.o}
+CXX = c++
 RM = rm -f
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
-
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 
 NAME = claptrap
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-	$(CC) $(CPPFLAGS) $(SRCS) -o $(NAME)
-
+$(NAME): $(OBJS)
+	$(CC) $(CXXFLAGS) $(OBJS) -o $(NAME)
+clean:
+	$(RM) $(OBJS)
 fclean: clean
 	$(RM) $(NAME)
 
