@@ -26,7 +26,7 @@ NAME = ScavTrap
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CPPFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
 
 clean:
 	$(RM) $(OBJS)
