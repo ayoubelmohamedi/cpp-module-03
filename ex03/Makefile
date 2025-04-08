@@ -24,7 +24,7 @@ NAME = DiamondTrap
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CPPFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
+	$(CXX) $(CPPFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
 
 clean:
 	$(RM) $(OBJS)

@@ -21,9 +21,10 @@ NAME = claptrap
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CXXFLAGS) $(OBJS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 clean:
 	$(RM) $(OBJS)
+
 fclean: clean
 	$(RM) $(NAME)
 
